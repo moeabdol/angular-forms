@@ -49,4 +49,11 @@ export class ModelFormComponent implements OnInit {
       language:  this.language
     });
   }
+
+  onSubmit() {
+    if (this.myForm.valid) {
+      console.log("Form Submitted!");
+      this.myForm.reset();
+    }
+  }
 }
